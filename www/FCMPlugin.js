@@ -26,6 +26,11 @@ FCMPlugin.prototype.getToken = function( success, error ){
 	exec(success, error, "FCMPlugin", 'getToken', []);
 }
 
+// GET APNs TOKEN //
+FCMPlugin.prototype.getAPNSToken = function( success, error ){
+	exec(success, error, "FCMPlugin", 'getAPNSToken', []);
+}
+
 // DEFAULT NOTIFICATION CALLBACK //
 FCMPlugin.prototype.onNotificationReceived = function(payload){
 	console.log("Received push notification")

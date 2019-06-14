@@ -1,19 +1,20 @@
 {
-  "version": "2.4.0",
-  "name": "cordova-plugin-fcm-with-dependecy-updated",
+  "version": "1.0.0",
+  "name": "cordova-plugin-fcm-with-dependency-updated-with-apns",
   "cordova_name": "Cordova FCM Push Plugin",
-  "description": "Google Firebase Cloud Messaging Cordova Push Plugin fork with dependecy updated",
+  "description": "Google Firebase Cloud Messaging Cordova Push Plugin fork with dependency updated and APNs Support",
   "license": "MIT",
   "repo": "",
   "issue": "",
-  "author": "André Augusto Tissot",
+  "author": "Jerome Nolasco",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated"
+    "url": "https://github.com/eroongs/cordova-plugin-fcm-with-dependecy-updated-with-apns"
   },
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
+    "apns",
     "cordova-ios",
     "notifications",
     "push",

@@ -13,5 +13,7 @@
 @interface AppDelegate (FCMPlugin)
 
 + (NSData*)getLastPush;
++ (NSString*)getAPNSToken;
+- (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
 @end

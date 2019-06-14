@@ -1,17 +1,16 @@
-# Google Firebase Cloud Messaging Cordova Push Plugin
+# Google Firebase Cloud Messaging Cordova Push Plugin with APNs Support
 > Extremely easy plug&play push notification plugin for Cordova applications with Google Firebase FCM.
 
-[![npm downloads](https://img.shields.io/npm/dt/cordova-plugin-fcm-with-dependecy-updated.svg)](https://www.npmjs.com/package/cordova-plugin-fcm-with-dependecy-updated)
+<!-- [![npm downloads](https://img.shields.io/npm/dt/cordova-plugin-fcm-with-dependecy-updated.svg)](https://www.npmjs.com/package/cordova-plugin-fcm-with-dependecy-updated)
 [![npm version](https://img.shields.io/npm/v/cordova-plugin-fcm-with-dependecy-updated.svg)](https://www.npmjs.com/package/cordova-plugin-fcm-with-dependecy-updated)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/andrehtissot/cordova-plugin-fcm-with-dependecy-updated.svg)](https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated/issues)
 [![GitHub forks](https://img.shields.io/github/forks/andrehtissot/cordova-plugin-fcm-with-dependecy-updated.svg)](https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated/network)
 [![GitHub stars](https://img.shields.io/github/stars/andrehtissot/cordova-plugin-fcm-with-dependecy-updated.svg)](https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated/stargazers)
-[![Known Vulnerabilities](https://snyk.io/test/github/andrehtissot/cordova-plugin-fcm-with-dependecy-updated/badge.svg?targetFile=package.json)](https://snyk.io/test/github/andrehtissot/cordova-plugin-fcm-with-dependecy-updated?targetFile=package.json)
-[![DeepScan grade](https://deepscan.io/api/teams/3417/projects/5068/branches/39495/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3417&pid=5068&bid=39495)
+[![Known Vulnerabilities](https://snyk.io/test/github/andrehtissot/cordova-plugin-fcm-with-dependecy-updated/badge.svg?targetFile=package.json)](https://snyk.io/test/github/andrehtissot/cordova-plugin-fcm-with-dependecy-updated?targetFile=package.json) -->
 
 ## Authorship
-This is a fork from https://github.com/fechanique/cordova-plugin-fcm with behind-the-scenes improvements.
+This is a fork from https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated with behind-the-scenes improvements.
 
 This fork has its google and firebase dependencies versions defined, which is necessary to avoid cordova build errors.
 
@@ -64,6 +63,16 @@ FCMPlugin.onTokenRefresh(function(token){
 //FCMPlugin.getToken( successCallback(token), errorCallback(err) );
 //Keep in mind the function will return null if the token has not been established yet.
 FCMPlugin.getToken(function(token){
+    alert(token);
+});
+```
+
+#### Get APNs token
+
+```javascript
+//FCMPlugin.getAPNSToken( successCallback(token), errorCallback(err) );
+//Keep in mind the function will return null if the token has not been established yet.
+FCMPlugin.getAPNSToken(function(token){
     alert(token);
 });
 ```
